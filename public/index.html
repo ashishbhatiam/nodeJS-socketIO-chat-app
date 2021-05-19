@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEB-CHAT</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+         
+        <main class="container">
+            
+            <div class="glass-container">
+                    <nav>
+                        <div id="feedback"></div>
+                        <div class="logo">WEB-CHAT</div>
+                    </nav>
+
+                    
+                <div class="msg-section">
+                    <div class="message-panel" id="panel">
+                    </div>    
+                    <div class="input-section">
+                        <form action="">
+                            <input type="text" placeholder="Enter username" maxlength="30" id="userName" autocomplete="off" required>
+                            <div class="input-field">     
+                                <textarea name="" id="input-msg" placeholder="Type a message" autocomplete="off" required></textarea>
+                                <button type="submit" class="btn" id="send">send</button>
+                                <button type="submit" class="s-btn" id="send1">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.1/autosize.min.js"></script>
+        <script src="./app.js"></script>    
+
+</body>
+</html>

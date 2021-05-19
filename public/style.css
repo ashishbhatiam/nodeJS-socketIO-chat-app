@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-size: .8rem;
+    padding: .3rem;
+}
+
+.container{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.glass-container{
+    width: 70%;
+    max-width: 1000px;
+    height: 98%;
+    border-radius: 2rem;
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5)
+        );
+        width: 100%;
+        padding: .7rem 3rem;
+}
+
+.logo{
+    font-size: 1.1rem;
+    font-weight: 900;
+    letter-spacing:1px;
+    color: rgba(16, 107, 96);
+    cursor: pointer;
+}
+
+#feedback{
+    color: rgba(16, 107, 96, 0.3);
+    font-size: 13px;
+    text-overflow: ellipsis;
+    user-select: none;
+}
+
+
+.msg-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.message-panel{
+    margin: 0 1rem;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.recieve-msg{
+    max-width: 50%;
+    border-radius: 2rem;
+     background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5)
+      );
+      margin: .5rem 0rem;
+      padding: .5rem .7rem;
+      align-self: flex-start;
+
+    word-wrap: break-word;
+}
+
+.send-msg{
+    max-width: 50%;
+    border-radius: 2rem;
+    background:rgba(52, 73, 94, 0.3);
+    margin: .5rem 0rem;
+    padding: .5rem .7rem;
+    align-self: flex-end;
+    word-wrap: break-word;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb56;
+}
+
+input{
+    width: 100%;
+    padding: .7rem 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    text-overflow: ellipsis;
+}
+
+textarea{
+    width: 100%;
+    padding: .7rem 1rem;
+    font-size: 1rem;
+    height: 10px;
+    border: none;
+    outline: none;
+    text-overflow: ellipsis;
+    direction:ltr;
+    max-width: 100%;
+    max-height: 150px;
+}
+
+textarea::-webkit-scrollbar{
+    display: none;
+}
+
+#userName{
+    background: rgba(255, 250, 250, 0.9);
+    border-top: 2px solid #dbdbdb;
+}
+
+#userName::placeholder{
+    color: red;
+}
+
+.btn{
+    width: 100%;
+    padding: .7rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    background: rgba(16, 107, 96);
+    color: white;
+    text-transform: uppercase; 
+    cursor:pointer;   
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.s-btn{
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+
+    nav{
+        padding: .7rem 1.3rem;
+    }
+
+    .container{
+        max-height: 100vh;
+    }
+
+    .glass-container{
+        width: 100%;
+        border-radius: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .btn{
+        display: none;
+    }
+
+    .s-btn{
+        align-self: flex-end;
+    display: inline-block;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    color: rgba(16, 107, 96);
+    margin: 0 15px 3px 15px;
+    cursor: pointer;
+}
+
+    .fab{
+        font-size: 25px;
+    }
+    
+    .input-field{
+        flex-direction: row;
+        background: rgb(255, 255, 255);
+        align-items: center;
+    }
+    
+    input{
+        padding: .5rem 1rem;
+    }
+
+    textarea{
+        padding: .5rem 1rem;
+    }
+
+    .send-msg, .recieve-msg{
+        max-width: 70%;
+    }
+
+        #feedback{
+            max-width: 200px;
+            max-width: 200px;
+        }
+
+}
