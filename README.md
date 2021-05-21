@@ -5,6 +5,15 @@ A simple chat application built in [Node.js](https://nodejs.org) using [Express]
 
 View **live demo** here: [https://ab-web-chat.herokuapp.com/](https://ab-web-chat.herokuapp.com/)
 
+## Features
+
+```
+    1). Group Chat. 
+    2). One to One chat.
+    3). Shows which User is typing.
+    4). clean ui and ux.
+ ```
+
 Installation
 ===
 
