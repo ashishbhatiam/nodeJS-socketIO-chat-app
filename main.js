@@ -1,12 +1,15 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
 const socket = require('socket.io');
+const port = process.env.PORT || 5001
 
-const server = app.listen(8000, () => {
-    console.log('server is running on port 8000');
+const server = app.listen(port, () => {
+    console.log(`server is running on port ${port}`);
 });
 
 app.use(express.static('public'));
+app.use('*', express.static('public'));
 
 const io = socket(server);
 

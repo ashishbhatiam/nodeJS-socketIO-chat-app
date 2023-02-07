@@ -1,4 +1,6 @@
-const socket = io.connect('http://localhost:8000');
+const hostUrl = window.location.protocol + "//" + window.location.host;
+
+const socket = io.connect(hostUrl);
 
 const input = document.getElementById('input-msg');
 const btn = document.getElementById('send');
