@@ -3,7 +3,7 @@ NodeJS Socket.io Real-time Chat App
 
 A simple chat application built in [Node.js](https://nodejs.org) using [Express](http://expressjs.com/) and [Socket.IO](https://socket.io/).
 
-View **live demo** here: [https://ab-web-chat.herokuapp.com/](https://ab-web-chat.herokuapp.com/)
+View **live demo** here: [web-chat-amar.onrender.com/](https://web-chat-amar.onrender.com/)
 
 ## Features
 
